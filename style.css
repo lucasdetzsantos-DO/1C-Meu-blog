@@ -9,7 +9,7 @@ header {
         padding: 13px;
     }
 
-    main {
+main {
         background-color: #FFFF;
         color: black;
         max-width: 1200px;
@@ -17,13 +17,13 @@ header {
         padding: 16px;
     }
 
-    article {
+article {
         display: flex;
         padding-top: 10px;
         padding-bottom: 10px;
     }
 
-    img {
+img {
         width: 200px;
         height: 200px;
         border-radius: 5px;
@@ -31,6 +31,6 @@ header {
 
     }
 
-    .artigo-autor {
+.artigo-autor {
         font-weight: bold;
     }

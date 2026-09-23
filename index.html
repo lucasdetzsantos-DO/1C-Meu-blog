@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>blog</title>
+</head>
+<style>
+    header {
+        background-color: #e00303e1;
+        color: #FFFF;
+        border: 2px solid black;
+        border-radius: 40px;
+        text-align: center;
+        max-width: 1300px;
+        margin: 0 auto;
+        padding: 13px;
+    }
+
+    main {
+        background-color: #FFFF;
+        color: black;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 16px;
+    }
+
+    article {
+        display: flex;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    img {
+        width: 200px;
+        height: 200px;
+        border-radius: 5px;
+        padding-right: 20px;
+
+    }
+
+    .artigo-autor {
+        font-weight: bold;
+    }
+</style>
+
+<body>
+    <header>
+        <h1>Meu blog de jogos</h1>
+        <p> aqui vou compartilhar conhecimentos e curiosidades sobre jogos
+        <p>
+    </header>
+
+
+    <main>
+        <article>
+            <img src="imagem-blog.jpg"
+                alt="Ilustração minimalista em preto e branco da cabeça mecânica de V1 do jogo ULTRAKILL.">
+            <div>
+                <h2>meu primeiro post</h2>
+                <p class="artigo-autor"><i>por: Lucas Detz</i></p>
+                <p>boas-vindas ao meu blog! aqui vou compartilhar dicas e curiosidades sobre jogos.</p>
+                <button>❤ <span>0</span></button>
+                <button>👍 <span>0</span></button>
+            </div>
+        </article>
+
+        <article>
+            <img src="imagem-blog.jpg"
+                alt="Ilustração minimalista em preto e branco da cabeça mecânica de V1 do jogo ULTRAKILL.">
+            <div>
+                <h2>meu segundo post</h2>
+                <p class="artigo-autor"><i>por: Lucas Detz</i></p>
+                <p>boas-vindas ao meu blog! aqui vou compartilhar dicas e curiosidades sobre jogos.</p>
+                <button>❤ <span>0</span></button>
+                <button>👍 <span>0</span></button>
+            </div>
+        </article>
+    </main>
+
+</body>
+<script>
+    const botoes = document.querySelectorAll("button")
+    botoes.forEach(function (botao) {
+        let curtiu = false
+        botao.addEventListener("click", botaoClicado)
+
+        function botaoClicado() {
+            console.log("fui clicado")
+            let texto = botao.querySelector("span")
+            if (curtiu === false) {
+                texto.textContent++;
+                curtiu = true
+            } else {
+                texto.textContent--;
+                curtiu = false
+            }
+        }
+    })
+
+
+</script>
+
+</html>

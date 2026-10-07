@@ -7,13 +7,22 @@
     --cor-botao: #FFFF;
 }
 
+.tema-escuro{
+    --cor-primaria: #d24242e1;
+    --cor-secundaria: #d16565e1;
+    --cor-fundo: #000000;
+    --cor-texto:  rgb(255, 255, 255);
+    --cor-contraste: #000000;
+    --cor-botao: #050505;
+}
+
 body{
     max-width: 100vw;
 }
 
 header {
         background-color: var(--cor-primaria);
-        color: var(--cor-botao);
+        color: var(--cor-contraste);
         border: 2px solid black;
         border-radius: 40px;
         text-align: center;

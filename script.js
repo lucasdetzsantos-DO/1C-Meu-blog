@@ -26,5 +26,5 @@ if(corpoPagina.classList.contains("tema-escuro")) {
 } else {
     corpoPagina.classList.add("tema-escuro");
      console.log("muda ")
-}
+ }
 }

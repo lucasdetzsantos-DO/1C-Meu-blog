@@ -23,8 +23,9 @@ function mudaTema(){
 
     if(corpoPagina.classList.contains("tema-escuro")) {
      corpoPagina.remove("tema-escuro");
+     console.log("remove")
     } else {
      corpoPagina.classList.add("tema-escuro");
-     console.log("muda ")
+     console.log("muda")
     }
 }
